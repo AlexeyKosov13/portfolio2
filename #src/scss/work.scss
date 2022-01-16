@@ -1,0 +1,28 @@
+.work {
+    
+}
+.work__container {
+    background-color: #0E0E33;
+}
+
+.title__work {
+    color: $mainColor;
+    padding-top: 150px;
+    margin-bottom: 80px;
+}
+.work__statistic {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 480px;
+}
+.work__statistic_item {
+    max-width: 140px;
+}
+.statistic__item_num {
+    font-size: 42px;
+    line-height: 50px;
+}
+.statistic__description {
+    font-size: 11px;
+    line-height: 30px;
+}

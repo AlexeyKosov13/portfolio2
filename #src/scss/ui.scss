@@ -1,0 +1,152 @@
+.btn {
+    display: inline-block;
+    line-height: 140%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    background-color: $BlueColor;
+    border-radius: 15px;
+    padding: 17px 66px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 10px 2px rgba(13, 135, 228, 0.2);
+    border: 2px solid $BlueColor;
+    &:hover {
+        color: $BlueColor;
+        background-color: #fff;
+        border: 2px solid $BlueColor;
+        transition: all 0.3s ease;
+        
+    }
+}
+
+._title_block {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 8px;
+    
+    display: block;
+    margin: 0 auto;
+    @media (max-width:$md2+px) {
+        font-size: 48px;
+    } 
+}
+
+._subtitle_block {
+    display: block;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: $GrayColor;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 600px;
+    @media (max-width:$md1+px) {
+        width: 400px;
+    } 
+    
+}
+
+._advice {
+    background-color: $YellowColor;
+    border-radius: 12px;
+    text-align: center;
+    
+}
+._advice_text {
+    font-size: 20px;
+    line-height: 140%;
+    position: relative;
+    padding:38px 150px 38px 209px;
+    text-align: left;
+    &::before {
+        display: inline-block;
+        content: 'i';
+        font-weight: 600;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #000;
+        border-radius: 50%;
+        position: absolute;
+        padding-left: 11px;
+        padding-top: 2px;
+        top: 35px;
+        left: 170px;
+        @media (max-width:$md2+px) {
+            left: 50px;
+            top: 30px;
+        } 
+    }
+    @media (max-width:$md2+px) {
+        padding: 30px 84px;
+    } 
+}
+
+.popup_img {
+    cursor: pointer;
+}
+
+.modalWindow {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding: 100px 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+   
+    background-color: rgba(0,0,0,0.5); 
+}
+.modal-content {
+    background-color: #fefefe;
+    margin:0 auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 100%;
+    height: auto;
+    
+  }
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 56px;
+    font-weight: bold;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup {
+    height: auto;
+    width: 100%;
+}
+
+
+
+
+// input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+// input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+// input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+// input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+// input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+// input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+// input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+// input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}

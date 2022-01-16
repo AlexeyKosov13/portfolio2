@@ -1,0 +1,64 @@
+.project {
+}
+._container {
+}
+.project__title {
+    margin-top: 300px;
+}
+.project__menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.project__menu_item {
+    margin-right: 100px;
+}
+.project__menu_item:last-child {
+    margin-right: 0;
+}
+.project__menu_link {
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+.project__menu_link:hover {
+    color: $BlueColor;
+    transition: 0.5s;
+}
+.project__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: -10px;
+    
+}
+.project__item {
+    border: 1px solid #E8E8E8;
+    padding: 40px 40px 20px 40px;
+    max-width: 500px;
+    min-height: 200px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.project__item_title {
+    font-size: 19px;
+    line-height: 28px;
+    color: #000000;
+}
+.project__item_text {
+    font-size: 16px;
+    line-height: 30px;
+    color: $GrayColor;
+    max-width: 460px;
+}
+.project__btn {
+    margin: auto;
+    margin-bottom: 150px;
+}
