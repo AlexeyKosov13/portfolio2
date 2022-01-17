@@ -35,9 +35,12 @@ footer {
     border-bottom: 1px solid  rgba(255, 255, 255, 0.5);
     
 }
-.sevices__link {
+.services__link {
     color: $mainColor;
     text-decoration: none;
+}
+.services__link:hover {
+    color: $BlueColor;
 }
 
 .offices__item {
@@ -54,9 +57,8 @@ footer {
     line-height: 28px;
     text-decoration: none;
 }
-.footer__contacts {
-}
-.contacts__items {
+.offices__link:hover {
+    color: $BlueColor;
 }
 .contacts__item {
     list-style-type: none;
@@ -69,6 +71,9 @@ footer {
 .contacts__link {
     color: $mainColor;
     text-decoration: none;
+}
+.contacts__link:hover {
+    color: $BlueColor;
 }
 .footer__bottom {
     display: flex;
@@ -96,6 +101,9 @@ footer {
     line-height: 28px;
     color: $mainColor;
     text-decoration: none;
+}
+.links__social:hover {
+    color: $BlueColor;
 }
 a[href^="tel:"]:before {
     content: "\260e";
