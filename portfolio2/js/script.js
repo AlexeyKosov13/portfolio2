@@ -15,15 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     };
     
-    function showAnswers(i) {  
-        answers[i].classList.toggle('hide');  
+    function showAnswers(i) {
+        answers[i].classList.toggle('hide');
     };
     questionParent.addEventListener('click', (e) => {
         const target = e.target;
         
         function getAnswer(tag) {
             tag.forEach((item, i) => {
-                if (target == item) {      
+                if (target == item) {
                     showAnswers(i);
                 };
             });
@@ -32,7 +32,18 @@ document.addEventListener('DOMContentLoaded', () => {
             getAnswer(questions);
             getAnswer(plus);
             getAnswer(text);
-        };      
+        };
     });
-})
+});
+
+let contain = document.getElementById("contain");
+
+contain.addEventListener("click", openNav);
+
+function openNav() {
+  let element = document.getElementById("nav");
+  element.classList.toggle("open");
+  
+  contain.classList.toggle("change");
+}
 

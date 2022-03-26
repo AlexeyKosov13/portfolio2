@@ -1,9 +1,6 @@
-.project {
-}
-._container {
-}
+
 .project__title {
-    margin-top: 300px;
+    margin-top: 50px;
 }
 .project__menu {
     display: flex;
@@ -61,4 +58,10 @@
 .project__btn {
     margin: auto;
     margin-bottom: 150px;
+}
+
+@media (max-width: $md2+px) {
+    .project__menu_item {
+        margin-right: 30px;
+    }
 }
